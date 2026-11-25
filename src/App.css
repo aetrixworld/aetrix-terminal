@@ -1,0 +1,258 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #e8eaf6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  color: #9945ff;
+}
+
+.brand h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.tagline {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #9aa0b5;
+}
+
+.swap-card {
+  background: #171a26;
+  border: 1px solid #262b3d;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.demo-banner {
+  background: #3a2f10;
+  border: 1px solid #a8842c;
+  color: #ffd97a;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #9aa0b5;
+  margin-bottom: 6px;
+}
+
+.field .row {
+  display: flex;
+  gap: 8px;
+}
+
+.field input {
+  flex: 1;
+  min-width: 0;
+  background: #0f1119;
+  border: 1px solid #262b3d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.field select {
+  background: #0f1119;
+  border: 1px solid #262b3d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.flip {
+  align-self: center;
+  background: #262b3d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.details {
+  border-top: 1px solid #262b3d;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.details span:first-child {
+  color: #9aa0b5;
+}
+
+.fee-row {
+  color: #7bf1a8;
+}
+
+.swap-btn {
+  background: #9945ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.swap-btn:disabled {
+  background: #333950;
+  color: #9aa0b5;
+  cursor: not-allowed;
+}
+
+.muted {
+  color: #9aa0b5;
+  font-size: 13px;
+}
+
+.error {
+  color: #ff7a7a;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.success {
+  color: #7bf1a8;
+  font-size: 14px;
+  text-align: center;
+}
+
+.success a {
+  color: #7bf1a8;
+}
+
+.foot {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9aa0b5;
+  text-align: center;
+}
+
+/* Tabs (Swap | Launch) */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tabs button {
+  flex: 1;
+  background: #171a26;
+  border: 1px solid #262b3d;
+  color: #9aa0b5;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #9945ff;
+  border-color: #9945ff;
+  color: #fff;
+}
+
+/* Launch card */
+.launch-card .field > input,
+.launch-card .field > select,
+.launch-card .field > textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0f1119;
+  border: 1px solid #262b3d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.launch-card .field > textarea {
+  font-family: inherit;
+  resize: vertical;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: #9945ff;
+}
+
+.mono-sm {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  word-break: break-all;
+  text-align: right;
+}
+
+.success-panel {
+  border-top: 1px solid #262b3d;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.success-panel p {
+  margin: 0;
+}
+
+.success-panel a {
+  color: #7bf1a8;
+}
+
+.mint-address code {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  word-break: break-all;
+  color: #e8eaf6;
+}
